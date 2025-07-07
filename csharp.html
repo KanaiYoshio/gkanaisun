@@ -1,0 +1,268 @@
+﻿<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="author" content="kanai">
+<meta name="keywords" content="栃木自然観察クラブ,F.C.バルセロニャ,山野草">
+<meta name="description" content="サッカー、旅行、自然観察などのHP">
+<title>C#</title>
+<!-- Google Analytics -->
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EDCVRHZWXW"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-EDCVRHZWXW');
+	</script>
+<link rel="shortcut icon" type="image/x-icon" href="style/images/cs.png" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<link href='https://fonts.googleapis.com/css?family=Amaranth:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="style/js/carousel.js"></script>
+<script type="text/javascript" src="style/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="style/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.slickforms.js"></script>
+</head>
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper"> 
+  <!-- Begin Sidebar -->
+  <div id="sidebar">
+	<div id="logo"><a href="index.html"><img src="style/images/logo.svg" alt="栃木自然観察クラブ" /><font color="#ffffff"></font></a></div>
+    
+    <!-- Begin Menu -->
+    <div id="menu" class="menu-v">
+      <ul>
+        <li><a href="index.html" title="ホーム">ホーム</a></li>
+        <li><a href="natural.html">野草</a></li>
+        <li><a href="travel.html">旅暦</a></li>
+        <li><a href="soccar.html">サッカー</a></li>
+        <li><a href="csharp.html" class="active">C#</a></li>
+	<a href="https://rpx.a8.net/svt/ejp?a8mat=3HA92U+F4RNAQ+2HOM+61RI9&rakuten=y&a8ejpredirect=http%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2F0ea62065.34400275.0ea62066.204f04c0%2Fa21043087642_3HA92U_F4RNAQ_2HOM_61RI9%3Fpc%3Dhttp%253A%252F%252Fwww.rakuten.co.jp%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252F" rel="nofollow">
+        <br><広告><br>
+        <img src="http://hbb.afl.rakuten.co.jp/hsb/0eb4bbda.2aae3368.0eb4bbaa.95151395/" border="0"></a>
+<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3HA92U+F4RNAQ+2HOM+61RI9" alt="">
+      </ul>
+    </div>
+    <!-- End Menu -->
+    
+    <div class="sidebox">
+      <ul class="share">
+	<li><a href="https://form1ssl.fc2.com/form/?id=5992bf3d421b03af"><img src="style/images/icon-mail.png" alt="Mail" /></a></li>
+	<li><a href="https://gkanaisun.blog.fc2.com/"><img src="style/images/icon-blog.png" alt="Blog" /></a></li>
+    	<li><a href="https://www.facebook.com/kanaisun"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
+    	<li><a href="https://twitter.com/kanaisun"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
+      </ul>
+    </div>
+    <div class="sidebox">
+      <div class="search">
+        <h3>Web内を検索</h3>
+        <form class="searchform" method="get" action="https://www.google.co.jp/search" target="_blank">
+	<input type="hidden" name="hl" value="ja">
+	<input type="hidden" name="ie" value="utf-8">
+	<input type="hidden" name="oe" value="utf-8">
+	<input type="hidden" name="lr" value="lang_ja">	
+	<input type="hidden" name=domains value="https://kanaisun.web.fc2.com/">
+	<input type="hidden" name="sitesearch" value="https://kanaisun.web.fc2.com/" checked>
+	<input type="text" id="s" name=q value="type and hit enter" onfocus="this.value=''" onblur="this.value='type and hit enter'"/>
+        </form>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <!-- End Sidebar --> 
+  
+  <!-- Begin Content -->
+  <div id="content">
+    <h1 class="title">C#　何んでもいいから作る</h1>
+    <div class="intro">Windowsプログラミングで作るものを検討した結果、アイデアを活かしてWindowsアプリを開発し、公開することにしました。ただし、本ソフトウェアの使用によって生じるいかなる結果についても、一切の責任を負いかねますので、あらかじめご了承ください。</div>
+    <div class="line"></div>
+    <h3><a href="csharp/application/WebTextScraping.zip"><img src="csharp/images/Scraping.png" alt="" />WebTextScraping　★ウェブ テキスト スクレイピング★ Ver.1.0.0.0</h3></a>
+    <p>『Web Text Scraping』は、指定したWebアドレスからテキストを抽出して表示するアプリケーションです。
+アドレスを入力して「スクレイピング」ボタンを押すと、そのページからテキストのみが抽出され、画面に表示されます。抽出されたテキストの下部にはリンク一覧が表示され、そこからネットサーフィンを行うことも可能です。また、アンドゥ／リドゥ機能も搭載しています。ただし、ChatGPTのようなAPIを介して取得されたHTML以外の構造で描画されるテキストについては、抽出できない場合があります。ご利用の前に、msedgedriver.exe をダウンロードフォルダに配置してください。詳しい使い方については、同梱の「readme.txt」をご参照ください。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/NewsReader.zip"><img src="csharp/images/NewsReader.png" alt="" />NewsReader　★GoogleのRssReader★ Ver.1.0.0.1</h3></a>
+    <p>『NewsReader』は、GoogleのRss専用のオーソドックスなデスクトップアプリです。
+Rssの記事をテロップで表示し、記事をクリックするとブラウザで開きます。プロキシ経由では表示できません。詳しい使い方については、同梱の「readme.txt」をご参照ください。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/Telop.zip"><img src="csharp/images/Telop.png" alt="" />Telop　★テロップ★ Ver.1.0.0.6</h3></a>
+    <p>『Telop』は、テキストファイルやクリップボードの文字列をテロップとして表示する、タスクトレイ常駐型アプリケーションです。今回のバージョンアップでは、テキストファイルや文字列に加え、フォルダのドラッグ＆ドロップ操作にも対応しました。特にフォルダをドロップした場合、そのフォルダ内に含まれるすべてのテキストファイルの内容を一定間隔で繰り返し表示します。詳しい使い方については、同梱の「readme.txt」をご参照ください。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/JapaneseConv.zip"><img src="csharp/images/JapaneseConv.png" alt="" />JapaneseConv　★誤ってローマ字入力した文字を日本語に変換★ Ver.1.0.0.0</h3></a>
+    <p>『JapaneseConv』は、ローマ字入力をひらがなに変換するアプリです。起動すると、アプリはタスクトレイに常駐します。ローマ字をマウスで選択し、半角/全角キーを2回押すと、ひらがなに変換されます。ひらがなを再度選択し、Windowsのコンテキストメニューで再変換することも簡単に行えます。詳しい使い方については、同梱の「readme.txt」をご参照ください。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/ZoomCursor.zip"><img src="csharp/images/ZoomCursor.png" alt="" />Zoom Cursor ★ズームカーソル★ Ver.1.0.0.4</h3></a>
+    <p>拡大鏡は、たまに使いたい時があるものの起動が面倒で使っていませんでした。Escキーを2回押しで表示、1回で非表示にできるようにしました。マウスカーソルが拡大ルーペの中心となり、クリックやドラッグ選択も通常通り行えます。今回のバージョンアップでは、目障りだったちらつきを低減しました。アプリはタスクトレイに常駐し、左クリックで表示・非表示を切り替え、右クリックでコンテキストメニューを開くことができます。また、サイズの切り替えが可能で、倍率は2倍のみ対応しています。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/AnimationEditor.zip"><img src="csharp/images/AnimationEditor.png" alt="" />Animation Editor ★Gifアニメーションエディター★ Ver.1.0.0.2</h3></a>
+    <p>『Animation Editor』は、画像の読み込み、編集、保存を行うアプリケーションです。
+<li>画像ファイルの読み込み（*.gif, *.bmp, *.jpg, *.png）</li>
+<li>編集機能（移動、追加、削除）</li>
+<li>GIFアニメーションの出力</li><br>
+画像のペイント機能は含まれていません。<br>
+詳細については、同梱の「readme.txt」をご参照ください。</p> 
+</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/MousePoint.zip"><img src="csharp/images/MousePoint.png" alt="">MousePoint　★マウスカーソル見つけたい★ Ver.1.0.0.1</a></h3>
+    <p>『MousePoint』はマウスカーソルの位置を視覚的に強調する補助機能です。Windows Power Toolsにある機能を見て、それを参考に作成しましたが、技術的な理由で完全に同じ機能を実現することができませんでした。
+<li>起動するとタスクトレイに常駐します。</li>
+<li>Ctrlキーを2回連続で押すと、マウスカーソルを中心に半径100ピクセルの円が表示され、カーソルを見つけやすくなります。</li><br>
+　詳細については、同梱の「readme.txt」をご参照ください。</p> 
+    <div class="line"></div>
+    <h3><a href="csharp/application/Flocking3D.zip"><img src="csharp/images/Flocking3D.png" alt="">Flocking 3D　★整列/結束/分離★ Ver.1.0.0.3</a></h3>
+    <p>『Flocking』は群れを形成する生物の集団行動を指す科学用語です。<br>
+　鳥や魚などの群れが協調して動き、集団での安全性や生存率を高める動きを、以下の３つのルールに基づいてアルゴリズムで表現します。<br>
+<li>整列（Alignment）：近くの個体と同じ方向に向かう。</li>
+<li>結束（Cohesion）：群れ全体の中心に向かう。</li>
+<li>分離（Separation）：他の個体とぶつからないように距離を保つ。</li><br>
+　ボイドの色変更機能を追加しバージョンアップ。<br>
+　詳細については、同梱の「readme.txt」をご参照ください。</p> 
+    <div class="line"></div>
+    <h3><a href="csharp/application/PaintMixing.zip"><img src="csharp/images/PaintMixing.png" alt="">PaintMixing　★カラーパレット★ Ver.1.0.0.0</a></h3>
+    <p>『PaintMixing』は、絵の具を混ぜ合わせて、作られた色とそのRGB値を表示するアプリです。色を混ぜて、どんな色ができるか試してみましょう！最大5つの色とその分量を指定して、混ぜ合わせた色を表示します。<br>
+<li>色選択ボタンをマウスの左ボタンでクリックすると、色設定ダイアログが表示されます。</li>
+<li>色選択ボタンをマウスの右ボタンを押しながらドラッグすると、Windows上のカーソル位置の色がボタンの背景色に表示されます。マウスを離した位置の色が取得されます。</li>
+<li>色選択ボタンの右側に分量を数値で指定します。数値を変更した後は、更新ボタンを押して反映してください。</li><br>
+　詳細については、同梱の「readme.txt」をご参照ください。</p> 
+    <div class="line"></div>
+    <h3><a href="csharp/application/RainDrop.zip"><img src="csharp/images/RainDrop.png" alt="">Rain Drop　★雨の落下速度を計算★ Ver.1.0.0.0</a></h3>
+    <p>『Rain Drop』は、雨の落下速度を計算して表示するアプリです。
+雨は空気抵抗の影響で限界速度に達します。このことを聞いて「なるほど」と思い、その速度を計算してみました。「これなら避けられそうだ」と感じた結果をお楽しみください。(^^♪<br>
+　詳細については、同梱の「readme.txt」をご参照ください。</p> 
+    <div class="line"></div>
+    <h3><a href="csharp/application/SunriseTime.zip"><img src="csharp/images/SunrizeTime.png" alt="">Sunrise Time　★日の出日の入り時刻表示★ Ver.1.0.0.1</a></h3>
+    <p>『Sunrize Time』は日の出日の入り時刻を日本時間で表示します。どうやって計算するのか興味を持って作ってみました。バグ修正しバージョンアップ。<br>
+　・日時の変更<br>
+　・地点の追加/削除<br>
+　・地点の名前変更　など<br>
+　詳細については、同梱の「readme.txt」をご参照ください。</p> 
+    <div class="line"></div>
+    <h3><a href="csharp/application/OutlookCalendarCheck.zip"><img src="csharp/images/OutlookCalendarCheck.png" alt="">Outlook Calendar Check　★スケジュール確認★ Ver.1.0.0.0</a></h3>
+    <p>『Outlook Calendar Check』は、Microsoft Outlookのカレンダーを簡単にチェックできるアプリです。<br>
+　・起動時に当日の予定をMessageBoxで表示します。<br>
+　・指定した日数内の予定を計画タイトルのキーワードで検索できます。<br>
+　このアプリは、以上の2つのシンプルな機能を備えています。</p> 
+    <div class="line"></div>
+    <h3><a href="csharp/application/Dakuten.zip"><img src="csharp/images/Dakuten.png" alt="">Dakuten　★濁点★ Ver.1.0.0.0</a></h3>
+    <p>『Dakuten』は、以下のような状況で利用するテキストファイル変換アプリです。<br>
+　・ファイルが異なる文字コードでエンコードされている<br>
+　・濁点や半濁点が特定の環境で特殊な形式に変換されている<br>
+　このアプリは、機種依存文字となってしまう濁点や半濁点を適切に変換し、ファイルを上書き保存します。<br>
+　テロップの制作中に、Web上の文字列をコピーしてテキストファイルに保存した際、この問題に直面しました。<br>しかし、この事象はあまり頻繁に起こるものではありません。テロップにはこの機能が含まれています。</p> 
+    <div class="line"></div>
+    <h3><a href="csharp/application/QrCode.zip"><img src="csharp/images/QrCode.png" alt="">QrCode　★QRコードリードライター★ Ver.1.0.0.2</a></h3>
+    <p>このアプリは、PC上でQRコードの作成および読み取りを行うためのツールです。NuGetの.NETパッケージを利用して開発されています。最新バージョンでは、以下の機能が追加および改良されました。<br>
+　・アドレスの日本語文字に対応<br>
+　・PC上のファイルパスや既定アプリケーションへの対応<br>
+　・QRコードの解析機能を新たに追加<br>
+詳細については、同梱の「readme.txt」をご参照ください。</p> 
+    <div class="line"></div>
+    <h3><a href="csharp/application/WallViewer.zip"><img src="csharp/images/WallViewer.png" alt="">Wall Viewer　★壁紙ビューア★ Ver.1.0.0.0</a></h3>
+    <p>PCのデスクトップを画像ビューアとして利用できる、タスクトレイ常駐型アプリです。アプリを終了すると、壁紙は自動的に元の設定に戻ります。詳細については、同梱の「readme.txt」をご参照ください。</p> 
+    <div class="line"></div>
+    <h3><a href="csharp/application/WebPictureBrowser.zip"><img src="csharp/images/WebPictureBrowser.png" alt="">WebPictureBrowser　★ホームページを画像で閲覧★ Ver.1.0.0.4</a></h3>
+    <p>最新のホームページを画像として簡単に閲覧できるプログラムです。画像表示専用のため、Webブラウザのようにリンクをクリックして移動することはできませんが、取得した最新10件のアドレスを記録し、ページの再確認に便利です。たとえば、私は数時間おきに天気予報を確認する際に活用しています。取得する画像は大きめのサイズで、必要な部分を編集してトリミングする機能も備えています。トリミング設定は記録されるため、次回以降も同じ範囲で表示が可能です。今回の更新では、不具合の修正を行いました。</p> 
+    <div class="line"></div>
+    <h3><a href="csharp/application/Moon.zip"><img src="csharp/images/Moon.png" alt="">Moon　★月～まったりと～★ Ver.1.0.0.1</a></h3>
+    <p>日本時間での月の満ち欠けをタスクバーのアイコンに表示する、シンプルなプログラムです。月齢は0.1日単位で表示され、分単位の精度を持っています。詳しい使い方については、同梱の「readme.txt」をご参照ください。</p> 
+    <div class="line"></div>
+    <h3><a href="csharp/application/ClipArt.zip"><img src="csharp/images/ClipArt.png" alt="" />ClipArt　★画像付箋★ Ver.1.0.1.0 イメージ登録機能追加</h3></a>
+    <p>このプログラムは、画像キャプチャ、編集、アニメーションGIFの作成、そしてオリジナルアイコン風のランチャー作成が可能な多機能ツールです。詳細については、同梱の「readme.txt」をご参照ください。<br>
+ランチャー機能は、URL、EXEファイル、パスなどをドラッグ＆ドロップすることで強化され、リンクからアプリやファイル、ウェブページを簡単に開けます。また、お好みの画像を使ってデスクトップをカスタマイズすることもできます。画像の縁取りや扇形への変形といった編集機能も搭載しています。<br>
+さらに、画像ビューアとキャプチャ機能を組み合わせたアプリとして、画像をドラッグ＆ドロップしたり、クリップボードから貼り付けて表示することが可能です。メインフォームでは、マウスの右ボタンをドラッグすることで、マウス位置のオブジェクトが表示され、ボタンを離すとキャプチャが実行されます。<br>
+画像を保存する際は、フォームをマウスの左ボタンで押しながらドラッグ＆ドロップ可能な場所に移動させると、自動的に「yyyyMMddhhmmss.png」という形式で保存されます。また、フォームのアイコンをクリックするとメニューが表示され、Win+Vキーを使用してクリップボードの履歴を確認できます。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/ShortcutToExeSleeper.zip"><img src="csharp/images/ShortcutToExeSleeper.png" alt="">ShortcutToExeSleeper　★アプリ遅延起動ショートカットを作成★ Ver.1.0.0.0</a></h3>
+    <p>指定したEXEファイルの起動時間を遅延させるショートカットを作成できるプログラムです。スタートアップに登録したショートカットでエラーが発生する場合でも、起動を指定した秒数だけ遅延させることで、問題を回避できます。作成したショートカットは、デスクトップやスタートアップフォルダに保存することが可能です。詳しい使い方については、同梱の「readme.txt」をご参照ください。
+</p>  
+    <div class="line"></div>
+    <h3><a href="csharp/application/ImageComparison.zip"><img src="csharp/images/ImageComparison.png" alt="">ImageComparison　★2画像の差分をハイライト★ Ver.1.0.0.0</a></h3>
+    <p>2つの画像を比較し、差分をハイライト表示するアプリです。WinMergeというアプリでも同様の機能があると知り、「面白そうだ」と思って参考にしながら作成しました。詳しい使い方については、同梱の「readme.txt」をご参照ください。</p>  
+    <div class="line"></div>
+    <h3><a href="csharp/application/InPicture.zip"><img src="csharp/images/InPicture.png" alt="">In Picture　★ピクチャインピクチャ風★ Ver.1.0.0.2　<img src="csharp/images/Shuffle.png" alt="シャッフル" Width=3%>シャッフル</a></h3>
+    <p>タスクトレイ常駐型の画像ビューアです。左クリックでフォームの表示・非表示を切り替え、右クリックでコンテキストメニューを開くことができます。今回のバージョンアップでは、シャッフル機能を追加しました。詳しい使い方については、同梱の「readme.txt」をご参照ください。
+</p>  
+    <div class="line"></div>
+    <h3><a href="csharp/application/ColorScale.zip"><img src="csharp/images/ColorScale.png" alt="" Width=5% />Color Scale　★高精度カラースケール★ Ver.1.0.0.0</h3></a>
+    <p>『Color Scale』は、デスクトップ上で青から赤のスペクトル色を、指定したしきい値で区切って表示するタスクトレイ常駐型アプリです。このアプリは、マウス位置の画像のRGB値を調べるのではなく、スペクトル色をしきい値ごとに区分し、その数値を表示します。起動後は、タスクトレイのアイコンをクリックすることで表示のON/OFFを切り替えることができます。ただし、キャプチャした画像を拡大・縮小すると色補完が行われ、正確な値が得られない場合があるためご注意ください。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/Ellipse5.zip"><img src="csharp/images/Ellipse5.png" alt="" />Ellipse5　★5点を通るだ円★ Ver.1.0.0.0</h3></a>
+    <p>だ円の方程式を解くことで、5つの座標からだ円を描けることを知り、調べたところ、JavaScriptで書かれたWebプログラムを見つけました。それを参考にして、中心点、幅、回転角度を求めるプログラムを作成しました。私が使用しているCADでは描画が可能ですが、ここでは計算のみを行います。ただし、5つの点でだ円を作れない座標値を入力すると、異なる結果が返されることがあります。また、このアルゴリズムを利用した計算ソフトも存在しますが、スプラインが描けない古くて低レベルなものであるようです。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/ffmpegStream.zip"><img src="csharp/images/ffmpegStream.png" alt="" />ffmpegStream ★動画→GIFアニメーション変換★ </h3></a>
+    <p>画像を読み込み、編集してGIFアニメーションを作成するアプリです。起動したファイルにコマ数、送り速度を入力し、変換ボタンを押し動画ファイルを選択し、続いてgifファイル保存ダイアログで名前を付けて保存します。インターネットでffmpeg.exeを検索、ダウンロードしffmpegStream.exeと同じフォルダに置いて実行しなければ動きません。</p>   
+    <div class="line"></div>
+    <h3><a href="csharp/application/CalculatorMini.zip"><img src="csharp/images/Calculator.png" alt="" />CalculatorMini　★小さな電卓★</h3></a>
+    <p>画像キャプチャ機能を備えた電卓アプリです。フォームのキャプションバーに演算式を入力し、Enterキーを押すことで計算が実行されます。計算結果はクリップボードにテキストとして保存されます。表示サイズを「ミニ」に設定すると、計算結果がキャプションバーに表示されます。レギュラー表示では、演算式とその結果が画像として表示されます。演算方法や関数については、メニューの「ヘルプ」をご参照ください。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/Scope.zip"><img src="csharp/images/Scope.png" alt="" />Scope　★画像を透かし表示★</h3></a>
+    <p>昔見かけたことがある、画像のスケルトン描画を行うアプリです。ショートプログラムのアイデアがなかなか思いつかなかったのですが、使い方は簡単です。透かし表示したい画像を表示した状態でアプリを起動すると、キャプチャが行われ、画面中央にフォームが最前面で表示されます。デスクトップに別の画像を表示しても、中央の画面にはアプリ起動時の画像が表示されたままです。フォームはマウスの左ボタンでドラッグして移動でき、外枠をドラッグすることでサイズ変更が可能です。終了はマウスの右ボタンでクリックします。さらに、マウスホイールを使って透明度を調整することができます。起動時は1画面で表示されますが、Ctrlキーを押しながら起動すると、マルチ画面表示が可能です。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/moji.zip"><img src="csharp/images/moji.png" alt="" />moji　★文字を大きく表示★</h3></a>
+    <p>文字の画数が多く、書きにくい場合には、文字を大きく表示したいと思います。そんなとき、フォーム内のテキストボックスに文字を入力し、マウスドラッグまたはマウスホイールを使って拡大できます。
+</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/UnformatClipboardText.zip"><img src="csharp/images/UnformatClipboardText.png" alt="" />Unformat Clipboard Text　★クリップボードテキストから書式を取り除く★ Ver.1.0.0.3</h3></a>
+    <p>これはタスクトレイに常駐するアプリです。文字列をクリップボードにコピーし、貼り付ける際に書式を解除したい場合があります。そんな時、タスクトレイのアイコンをクリックすると、クリップボードに書式を取り除いた文字列がコピーされます。その後、その内容を貼り付けることで、書式なしのテキストを使用することができます。
+</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/SecondCounter.zip"><img src="csharp/images/SecondCounter.png" alt="" />Second Counter　★首起こし深呼吸は、5秒息を吸って、5秒息を吐く。これを繰り返すためのデジタルカウンター★ Ver.1.0.0.1</h3></a>
+    <p>このアプリは、1秒間隔でカウントするループ機能を持っています。タスクトレイのアイコンを右クリックすることで、設定を変更できます。表示は半透明で、マウスに反応しないため、マウス操作の邪魔になりません。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/InputToolTip.zip"><img src="csharp/images/InputToolTip.png" alt="" />InputToolTip　★マウスとキーボードキーからの入力をマウスカーソル上にツールチップ表示★</h3></a>
+    <p>PC画面で操作説明を動画キャプチャしたいとき、ショートカットキーを押してもその動作は記録されません。そこで、マウスカーソルの右上にツールチップを表示し、キー操作を映し込みます。表示される文字のフォント変更や、半角時のみの表示、文字の変換が可能です。また、フォルダ内の InputToolTipConfig.ini に変換候補を登録できますが、この設定は前述の設定よりも優先されます。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/ScreenGrid.zip"><img src="csharp/images/ScreenGrid.png" alt="" />Screen Grid　★PC画面にグリッドを表示★</h3></a>
+    <p>PC画面に方眼紙を貼り付けてみませんか？アイコントレイをクリックして操作します。左クリックで終了メニューを表示し、右クリックで表示/非表示やサイズ変更のメニューを操作できます。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/MouseRader.zip"><img src="csharp/images/MouseRader.png" alt="" />Mouse Rader　★マウスレーダー★</h3></a>
+    <p>フォームからマウスの位置と距離をビジュアル表示します。使い方は、スタートアップフォルダにexeファイルを保存し、PC起動時に自動的に実行されるようにすることです。フォームは半透明表示にし、タスクバーの邪魔にならない場所に移動させます。半透明でないと見えなくなるので、ご注意ください(^-^;。終了はコンテキストメニューから行えます。ただし、タスクバーを自動的に隠す設定には対応していません。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/TextureViewer.zip"><img src="csharp/images/TextureViewer.png" alt="" />TextureViewer　★画像の3D表示　～立体的に見えるわけではありません～★</h3></a>
+    <p>マウスの右ボタンをクリックすると、コンテキストメニューが開きます。また、画像ファイルをドラッグ＆ドロップで開くこともできます。画像は左クリックで移動でき、マウスホイールで拡大・縮小、右クリックで回転させることができます。なお、OpenTK.dll および GLSharp.dll を使用しています。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/TopInsert.zip"><img src="csharp/images/TopInsert.png" alt="" />TopInsert　★アクティブフォームの最前面表示/解除★</h3></a>
+    <p>アクティブフォームの常に最前面表示/解除は、Insertキーで切り替えられます。スタートアップフォルダに保存するには、C:\Users\[ユーザー名]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup に配置してください。これにより、PC起動時に自動的に実行されます。ただし、Insertキーが有効なアプリでは、Ctrlキーを押しながらInsertキーを押す必要があります。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/VoicePresenter.zip"><img src="csharp/images/VoicePresenter.png" alt="" />VoicePrezenter Ver1.1　★恥ずかしがりやのプレゼンテーター★</h3></a>
+    <p>Microsoft PowerPointファイルをドラッグ＆ドロップすると、ノートとスライド画像が表示されます。ノートは編集可能で、メディアプレーヤーを使って音声を読み上げることができます。実行はボタンを押すか、Ctrl + Sキーで行い、ファイルは上書きされます。履歴の前後移動はCtrl + ←→、10個飛ばして移動するにはCtrl + ↑↓を使用します。テキスト全選択はCtrl + Aで行えます。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/ClipBoard.zip"><img src="csharp/images/ClipBoard.png" alt="" />ClipBoard　★クリップボードの音声読み上げ★</h3></a>
+    <p>クリップボードを監視し、文字列と画像の履歴を最新の100個まで記録します。文字列はWscriptを使用してWaveファイルを作成し、メディアプレーヤーで読み上げます。読み上げのON/OFFは、Ctrl + Wキーで切り替えることができます。テキストボックスでは内容を編集でき、クリップボードにコピーするにはボタンを押すか、Ctrl + Sを使用します。履歴の前後移動はCtrl + ←→、10個飛ばして移動するにはCtrl + ↑↓を使用します。履歴の削除はCtrl + Del、テキスト全選択はCtrl + Aで行えます。また、ファイルのドラッグ＆ドロップにも対応しています。</p> 
+    <div class="line"></div>
+    <h3><a href="csharp/application/CaptureStamp.zip"><img src="csharp/images/Stamp.png" alt="" />CaptureStamp　★PC画面を重ねて表示★</h3></a>
+    <p>画像を半透明にして残像を表示します。フォーム上でマウスの右ボタンをクリックし、ドラッグして画像上でボタンを離すと、一見、特に変わったようには見えませんが…。フォームは常に最前面に表示されるため、他のアプリケーションに悪影響を与えることがあります。</p>  
+    <div class="line"></div>
+    <h3><a href="csharp/application/TopMostCalculator.zip"><img src="csharp/images/Calculator.png" alt="" />TopMostCalculator　★電卓は、いつも最前面★</h3></a>
+    <p>Windowsのアプリ「電卓」を起動し、常に最前面に表示します。これにより、他のアプリケーションの下に隠れる煩わしさから解放され、アクティブウィンドウ以外が暗く表示されます。この機能は、「Le Dimmer」という便利なソフトウェアを模倣したものです。OSは日本語版Windowsで、アプリケーション名は「電卓」に対応しています。</p>
+    <div class="line"></div>
+    <h3><a href="csharp/application/WindowLight.zip"><img src="csharp/images/Light.png" alt="" />WindowLight　★PC画面のアクティブフォーム以外を暗くする★</h3></a>
+    <p>アクティブウィンドウ以外を暗く表示します。この機能は、「Le Dimmer」という便利なソフトウェアを模倣したものです。</p>  
+    <div class="line"></div>
+  <a href="#content" class="h3">トップへ戻る</a>
+  <!-- End Content --> 
+  
+</div>
+<!-- End Wrapper -->
+<div class="clear"></div>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<!--[if !IE]> -->
+<script type="text/javascript" src="style/js/jquery.corner.js"></script>
+<!-- <![endif]-->
+</body>
+</html>
