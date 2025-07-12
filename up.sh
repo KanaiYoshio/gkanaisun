@@ -1,6 +1,4 @@
 ﻿#!/bin/bash
-cd /f/homepage/gkanaisun
-
 read -p "コミットコメントを入力してください: " msg
 
 git add .
