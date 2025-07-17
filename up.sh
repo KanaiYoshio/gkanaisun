@@ -1,5 +1,5 @@
 ﻿#!/bin/bash
-read -p "コミットコメントを入力してください: " msg
+msg="$(date +'%Y-%m-%d') HTML更新"
 
 git add .
 git commit -m "$msg"
