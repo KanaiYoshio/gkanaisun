@@ -101,19 +101,36 @@
     resultBox.innerHTML = '';
 
     if (keyword === "") return;
+    let found = false;
+    let checked = 0;
 
     pages.forEach(page => {
       fetch(page)
         .then(res => res.text())
         .then(html => {
+	  checked++;
           if (html.includes(keyword)) {
+	    found = true;
             const li = document.createElement("li");
             li.innerHTML = `<a href="${page}">${page} に "${keyword}" が見つかりました</a>`;
+            resultBox.appendChild(li);
+          }
+	  // すべてのページのチェックが終わったら確認
+          if (checked === pages.length && !found) {
+            const li = document.createElement("li");
+            li.textContent = `"${keyword}" は見つかりませんでした。`;
             resultBox.appendChild(li);
           }
         })
         .catch(err => {
           console.error(`ページ ${page} の取得に失敗しました`, err);
+	  checked++;
+	  // エラーが出ても全ページのチェック完了時に表示
+          if (checked === pages.length && !found) {
+            const li = document.createElement("li");
+            li.textContent = `"${keyword}" は見つかりませんでした。`;
+            resultBox.appendChild(li);
+          }
         });
     });
   }
