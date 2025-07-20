@@ -65,7 +65,7 @@
                 <p class="large-text">夏の炎天下、豊富な水量で透き通った清流に飛び込むと、爽快感を味わえます。<br>しかし、ダムを造ると、この透き通った川は失われてしまいます。</p>
 				</h2>
 		    <class="page-header">
-		    <div class="search"><h3>Web内を検索<button id="search-button">&#128269;</button></h3>
+		    <div class="search"><h3>Web内を検索<button id="search-button" title="検索">&#128269;</button></h3>
 <input type="text" id="search-box" placeholder="type and hit enter">
 <style>
   #search-box {
@@ -116,6 +116,7 @@
   }
 
   const searchBox = document.getElementById("search-box");
+  const searchButton = document.getElementById("search-button");
 
   // Enterキー対応
   searchBox.addEventListener("keydown", function (event) {
@@ -124,12 +125,10 @@
       search(keyword);
     }
   });
-
-  // 入力中にリアルタイム検索したいなら以下も有効にできます
-  // searchBox.addEventListener("input", function () {
-  //   const keyword = searchBox.value.trim();
-  //   search(keyword);
-  // });
+  // 検索アイコンボタンクリックにも対応（スマホ対応）
+  searchButton.addEventListener("click", function () {
+    search(searchBox.value.trim());
+  });
 </script>
 		        <div class="clear"></div>
         	    </div>
