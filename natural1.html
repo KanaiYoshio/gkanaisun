@@ -68,8 +68,8 @@
     </div>
     <div class="sidebox">
       <div class="search">
-        <h3>Web内を検索</h3>
-                <input type="text" id="search-box" placeholder="type and hit enter">
+        <h3>Web内を検索<button id="search-button">&#128269;</button></h3>
+        <input type="text" id="search-box" placeholder="type and hit enter">
 <style>
   #search-box {
     background-color: rgba(200, 200, 200, 0.5); /* ← 背景を透過 */
@@ -77,6 +77,13 @@
     border: 1px solid gray;        /* ← 必要に応じて枠線も設定 */
     padding: 5px;
     font-size: 16px;
+  }
+  #search-button {
+    background-color: transparent;
+    border: none;
+    padding: 6px 10px;
+    font-size: 16px;
+    margin-left: 5px;
   }
 </style>
 <ul id="search-results"></ul>
