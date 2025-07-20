@@ -70,15 +70,64 @@
     <div class="sidebox">
       <div class="search">
         <h3>Web内を検索</h3>
-        <form class="searchform" method="get" action="https://www.google.co.jp/search" target="_blank">
-	<input type="hidden" name="hl" value="ja">
-	<input type="hidden" name="ie" value="utf-8">
-	<input type="hidden" name="oe" value="utf-8">
-	<input type="hidden" name="lr" value="lang_ja">	
-	<input type="hidden" name=domains value="https://kanaisun.web.fc2.com/">
-	<input type="hidden" name="sitesearch" value="https://kanaiyoshio.github.io/gkanaisun/" checked>
-	<input type="text" id="s" name=q value="type and hit enter" onfocus="this.value=''" onblur="this.value='type and hit enter'"/>
-        </form>
+        <input type="text" id="search-box" placeholder="type and hit enter">
+<style>
+  #search-box {
+    background-color: rgba(200, 200, 200, 0.5); /* ← 背景を透過 */
+    color: black;                  /* ← テキスト色は好みに応じて調整 */
+    border: 1px solid gray;        /* ← 必要に応じて枠線も設定 */
+    padding: 5px;
+    font-size: 16px;
+  }
+</style>
+<ul id="search-results"></ul>
+
+<script>
+  const pages = [
+    "natural.html", "natural1.html", "natural2.html", "natural3.html",
+    "natural4.html", "natural5.html", "natural6.html", "natural7.html",
+    "natural8.html", "natural9.html", "natural10.html", "natural11.html",
+    "natural12.html", "csharp.html", "soccar.html", "travel.html"
+  ];
+
+  function search(keyword) {
+    const resultBox = document.getElementById("search-results");
+    resultBox.innerHTML = '';
+
+    if (keyword === "") return;
+
+    pages.forEach(page => {
+      fetch(page)
+        .then(res => res.text())
+        .then(html => {
+          if (html.includes(keyword)) {
+            const li = document.createElement("li");
+            li.innerHTML = `<a href="${page}">${page} に "${keyword}" が見つかりました</a>`;
+            resultBox.appendChild(li);
+          }
+        })
+        .catch(err => {
+          console.error(`ページ ${page} の取得に失敗しました`, err);
+        });
+    });
+  }
+
+  const searchBox = document.getElementById("search-box");
+
+  // Enterキー対応
+  searchBox.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      const keyword = searchBox.value.trim();
+      search(keyword);
+    }
+  });
+
+  // 入力中にリアルタイム検索したいなら以下も有効にできます
+  // searchBox.addEventListener("input", function () {
+  //   const keyword = searchBox.value.trim();
+  //   search(keyword);
+  // });
+</script>
         <div class="clear"></div>
       </div>
     </div>
