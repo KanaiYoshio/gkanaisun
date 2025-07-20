@@ -119,6 +119,7 @@
           if (checked === pages.length && !found) {
             const li = document.createElement("li");
             li.textContent = `"${keyword}" は見つかりませんでした。`;
+	    li.style.color = "white";
             resultBox.appendChild(li);
           }
         })
@@ -129,6 +130,7 @@
           if (checked === pages.length && !found) {
             const li = document.createElement("li");
             li.textContent = `"${keyword}" は見つかりませんでした。`;
+	    li.style.color = "white";
             resultBox.appendChild(li);
           }
         });
