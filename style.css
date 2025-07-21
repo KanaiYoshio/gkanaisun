@@ -1558,6 +1558,6 @@ table span.cross {
     }
 	/* ICON */
 	.icon {
-    width: 60px;      /* モバイル用に少し大きくする */
+    width: 100px;      /* モバイル用に少し大きくする */
     }
 }
