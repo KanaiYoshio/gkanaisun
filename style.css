@@ -1527,6 +1527,10 @@ table span.cross {
 	display: inline-block;
 	text-align: center;
 }
+.icon {
+  width: 40px;        /* 基本サイズ */
+  height: auto;
+}
 
 /* モバイル版
 ------------------------------- */
@@ -1551,5 +1555,9 @@ table span.cross {
     /* HOME */
     .home-content {
         margin-top: 20%;
+    }
+	/* ICON */
+	.icon {
+    width: 60px;      /* モバイル用に少し大きくする */
     }
 }
