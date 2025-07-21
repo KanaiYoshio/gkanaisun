@@ -1553,7 +1553,7 @@ table span.cross {
         margin-top: 20%;
     }
     /* ICON */
-	.icon {
-    width: 100px;      /* モバイル用に少し大きくする */
+    .icon {
+        width: 100px;      /* モバイル用に少し大きくする */
     }
 }
